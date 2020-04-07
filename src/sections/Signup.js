@@ -58,7 +58,7 @@ export default (props) => (
           <h3>Download App</h3> 
           <img src='assets/triller-logo-245x245.png' width='245px' height='245px' alt='triller' />
         </div>
-        <div className='logo-card logo-card-triller'>
+        <div className='logo-card logo-card-com-plex'>
           <h3>Media Partner</h3> 
           <img src='assets/com-plex-logo-275x246.png' width='275px' height='246px' alt='com plex' />
         </div>

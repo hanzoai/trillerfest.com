@@ -6,6 +6,10 @@
   flex-direction: row;
   justify-content: center;
 
+  @media #{$smaller-than-banners} {
+    flex-direction: column;
+  }    
+
   padding: $padding;
 
   .sign-up-stage {
@@ -13,6 +17,10 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media #{$smaller-than-banners} {
+      width: auto;
+      flex-direction: column;
+    }    
   }
 
   .form-outer {
@@ -56,25 +64,44 @@
         &:hover {
           background-color: #77b4e6;
         }
-  }
+
+        @media #{$smaller-than-banners} {
+          align-self: center;
+        }
+      }
     }
   }
 
   .logos-outer {
     display: flex;
     flex-direction: row;
+    @media #{$smaller-than-banners} {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+    }    
+
   }
 
   .logo-card {
     &:first-child {
       margin-right: $padding * 1.5;
+      @media #{$smaller-than-banners} {
+        margin-right: 0;
+      }
     }
 
     h3 {
       color: #fff;
-      font-size: 30px;
+      @include fontSizeOfHeading(3);
       text-transform: uppercase;
       text-align: left;
+    }
+
+    &.logo-card-com-plex {
+      @media #{$smaller-than-banners} {
+        padding-left: 30px;
+      }
     }
   }
 

@@ -14,12 +14,12 @@ export default () => {
   return (
     <div className='stage'>
       <Hero />
+      <Signup />
     </div>
   )
 }
 
 /*
-      <Signup />
       <Charities />
       <JayPharoah />
       <InstaFeed />

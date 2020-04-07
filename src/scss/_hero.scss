@@ -5,14 +5,10 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  //background-color: white;
-
   @media #{$media-phone} {
     height: 100vh;
-    //background-size: contain;
     background-image: (url('../../public/assets/artists/main-hero-mobile-480x1100.png'));
   }
-
 
   display: flex;
   flex-direction: column;
@@ -20,7 +16,6 @@
 
   header {
     height: 100px;
-    //width: 100%;
     @media #{$media-phone} {
       display: none;
     }
@@ -48,7 +43,6 @@
       width: 735px;
       height: 276px;
       @media #{$smaller-than-banners} {
-
         width: 80vw;
         height: auto;
       }    
@@ -59,9 +53,7 @@
       @media #{$smaller-than-banners} {
         width: 80vw;
         height: auto;
-        //margin-bottom: 70px;
       }    
-
     }
   }
 
