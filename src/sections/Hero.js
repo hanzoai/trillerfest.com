@@ -7,8 +7,7 @@ export default (props) => (
 
     </header>
     <main>
-      <img className='logo' src='assets/trillerfest-logo-735x276.png' alt='tf' width='735px' height='276px' />
-
+      <img className='logo' src='assets/trillerfest-logo-735x276.png' alt='tf'/>
       <div className='content-outer'>
         <YouTubeSubscribe />
         <div className='copy-outer'>

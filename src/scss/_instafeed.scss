@@ -10,16 +10,34 @@
 
   h2 {
     color: white;
-    font-size: 40px;
+    @include fontSizeOfHeading(2);
     text-transform: uppercase;
   }
 
   img {
     display: block;
 
+
+    &.subscribe {
+      width: 733px;
+      height: 188px;
+        @media #{$smaller-than-banners} {
+        width: 80vw;
+        height: auto;
+      }
+    }
+
     &.insta {
+      width: 1109px;
+      height: 1068px;
       margin-top: $padding * 2;
       margin-bottom: $padding * 2;
+      @media #{$smaller-than-ideal-stage} {
+        width: 80vw;
+        height: auto;
+        margin-top: $padding;
+        margin-bottom: $padding;
+        }
     }
   }
 }

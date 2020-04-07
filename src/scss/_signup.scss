@@ -6,6 +6,10 @@
   flex-direction: row;
   justify-content: center;
 
+  @media #{$smaller-than-ideal-stage} {
+    flex-direction: column;
+  }    
+
   padding: $padding;
 
   .sign-up-stage {
@@ -13,6 +17,11 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    @media #{$smaller-than-ideal-stage} {
+      width: auto;
+      flex-direction: column;
+      align-items: center;
+    }    
   }
 
   .form-outer {
@@ -33,6 +42,13 @@
             border-radius: 5px;  
             font-size: 18px;
             width: 100%;
+            @media #{$smaller-than-ideal-stage} {
+              width: 500px;
+            }    
+            @media #{$media-phone} {
+              width: 100%;
+            }    
+        
           }
           p {
             text-align: left;
@@ -46,7 +62,6 @@
         overflow: hidden;
         outline:none;
 
-
         width: 160px;
         padding: 8px 8px;
         border-radius: 3px;
@@ -56,25 +71,44 @@
         &:hover {
           background-color: #77b4e6;
         }
-  }
+        @media #{$smaller-than-ideal-stage} {
+          align-self: center;
+          margin-bottom: $padding;
+        }
+      }
     }
   }
 
   .logos-outer {
     display: flex;
     flex-direction: row;
+    @media #{$smaller-than-banners} {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 30px;
+    }    
+
   }
 
   .logo-card {
     &:first-child {
       margin-right: $padding * 1.5;
+      @media #{$smaller-than-banners} {
+        margin-right: 0;
+      }
     }
 
     h3 {
       color: #fff;
-      font-size: 30px;
+      @include fontSizeOfHeading(3);
       text-transform: uppercase;
       text-align: left;
+    }
+
+    &.logo-card-com-plex {
+      @media #{$smaller-than-banners} {
+        padding-left: 30px;
+      }
     }
   }
 
