@@ -55,12 +55,16 @@ export default (props) => (
       </div>
       <div className='logos-outer'>
         <div className='logo-card logo-card-triller'>
-          <h3>Download App</h3> 
-          <img src='assets/triller-logo-245x245.png' width='245px' height='245px' alt='triller' />
+          <h3>Download App</h3>
+          <a href="https://itunes.apple.com/us/app/triller-social-video-platform/id994905763">
+            <img src='assets/triller-logo-245x245.png' width='245px' height='245px' alt='triller' />
+          </a>
         </div>
         <div className='logo-card logo-card-triller'>
-          <h3>Media Partner</h3> 
-          <img src='assets/com-plex-logo-275x246.png' width='275px' height='246px' alt='com plex' />
+          <h3>Media Partner</h3>
+          <a href="https://complex.com">
+            <img src='assets/com-plex-logo-275x246.png' width='275px' height='246px' alt='com plex' />
+          </a>
         </div>
       </div>
     </div>

@@ -6,9 +6,12 @@ import Signup from './sections/Signup'
 import JayPharoah from './sections/JayPharoah'
 import InstaFeed from './sections/InstaFeed'
 import Footer from './sections/Footer'
+import analytics from './analytics'
 
 import './scss/styles.scss'
 
+analytics.init()
+analytics.pageview()
 
 export default () => {
   return (

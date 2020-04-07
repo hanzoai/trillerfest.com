@@ -1,4 +1,5 @@
 import React from 'react'
+import YouTubeSubscribe from '../components/YouTubeSubscribe'
 
 export default (props) => (
   <div className='hero'>
@@ -9,9 +10,7 @@ export default (props) => (
       <img className='logo' src='assets/trillerfest-logo-735x276.png' alt='tf' width='735px' height='276px' />
 
       <div className='content-outer'>
-        <a href="https://www.youtube.com/channel/UCOVQQTFALLID0EyoBMHaCsg?sub_confirmation=1">
-          <img className='subscribe' src='assets/ty-subscribe-free-pass.png' alt='tf' width='733px' height='188px' />
-        </a>
+        <YouTubeSubscribe />
         <div className='copy-outer'>
         <p className='line-1'>
             3 days of quarantine sessions
