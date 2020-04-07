@@ -1,0 +1,119 @@
+.charities {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #010c4c; 
+
+  padding: $padding;
+
+  h2.section-title {
+    color: #fff;
+    text-transform: uppercase;
+    margin-top: 8px;
+    margin-bottom: 12px;
+    font-size: 48px;
+    font-weight: bold;
+  }
+
+  .cards-outer {
+    display: flex;
+    flex-direction: row;
+
+    .card {
+      width: 350px;
+      height: 580px;
+
+      padding: $padding;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      img {
+        display: block;
+      }
+
+
+      background-color: #5428a1;
+      border: 1px solid #010c4c;
+      border-radius: 12px;
+      &:first-child {
+        margin-right: $padding;
+      }
+
+      .logo-outer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 370px; // so donate buttons line up
+      }
+
+      &.ram-card {
+        background-image: radial-gradient(at 100% 0px, #a1114f 0%, #5428a1 100%);
+
+        img {
+          margin-bottom: 12px;
+        }
+
+        p.title {
+          color: #dd1b3e;
+          text-transform: uppercase;
+          font-size: 22px;
+
+          &.title-2 {
+            font-size: 32px;
+          }
+        }
+      }
+
+      &.nkh-card {
+        background-image: radial-gradient(at 0px 0px, #a1114f 0%, #5428a1 100%);
+
+        img {
+          padding-top: 12px;
+        }
+      }
+
+      button {
+        background-color: transparent;
+        background-repeat: no-repeat;
+        border: none;
+        cursor: pointer;
+        overflow: hidden;
+        outline:none;
+
+        font-size: 18px;
+        text-transform: uppercase;
+
+
+        border: 1px #fff solid;
+        border-radius: 3px;
+        color: #fff;
+        padding: 12px;
+        width: 100%;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.3); 
+        }
+
+        margin-bottom: $padding;
+      }
+
+      p.copy {
+        color: #fff;
+        font-size: 18px;
+        line-height: 24px;
+      }
+
+    }
+  }
+  p.outer-copy {
+    color: #fb006a;
+    font-size: 52px;
+    width: 1120px;
+    font-weight: lighter;
+    margin-top: $padding;
+    margin-bottom: $padding;
+  }
+}
+
