@@ -1,4 +1,6 @@
 import React from 'react'
+
+import Hero from './sections/Hero'
 import Charities from './sections/Charities'
 import Signup from './sections/Signup'
 import JayPharoah from './sections/JayPharoah'
@@ -9,7 +11,7 @@ import './scss/styles.scss'
 export default () => {
   return (
     <div className='stage'>
-      <div className='hero' />
+      <Hero />
       <Signup />
       <Charities />
       <JayPharoah />
