@@ -5,6 +5,14 @@
   background-repeat: no-repeat;
   background-size: cover;
 
+  //background-color: white;
+
+  @media #{$media-phone} {
+    height: 100vh;
+    //background-size: contain;
+    background-image: (url('../../public/assets/artists/main-hero-mobile-480x1100.png'));
+  }
+
 
   display: flex;
   flex-direction: column;
@@ -12,25 +20,49 @@
 
   header {
     height: 100px;
-    width: 100%;
+    //width: 100%;
+    @media #{$media-phone} {
+      display: none;
+    }
   }
 
   main {
-    width: $stage-width;
-
+    max-width: $stage-width;
     padding-bottom: $padding * 1.5;
+    height: 100%;
+
+    @media #{$media-phone} {
+      padding: $padding * 0.5;
+    }
 
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: space-between;
-    
-    height: 100%;
 
     img {
       display: block;
-    }
 
+    }
+    img.logo {
+      width: 735px;
+      height: 276px;
+      @media #{$smaller-than-banners} {
+
+        width: 80vw;
+        height: auto;
+      }    
+    }
+    img.subscribe {
+      width: 733px;
+      height: 188px;
+      @media #{$smaller-than-banners} {
+        width: 80vw;
+        height: auto;
+        //margin-bottom: 70px;
+      }    
+
+    }
   }
 
   .content-outer {
@@ -45,13 +77,22 @@
       color: $color-pink;
       
       &.line-1 {
-        font-size: 44px;
+        font-size: 2rem;
+        @media #{$media-phone} {
+          font-size: 1.3rem;
+        }
       }
       &.line-2 {
-        font-size: 80px;
+        @include fontSizeOfHeading(1);
+        @media #{$media-phone} {
+          font-size: 2.5rem;
+        }
       }
       &.line-3 {
-        font-size: 30px;
+        @include fontSizeOfHeading(3);
+        @media #{$media-phone} {
+          font-size: 1.2rem;
+        }
         color: white;
       }
     }

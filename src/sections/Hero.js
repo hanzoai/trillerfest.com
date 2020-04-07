@@ -6,10 +6,9 @@ export default (props) => (
 
     </header>
     <main>
-      <img className='logo' src='assets/trillerfest-logo-735x276.png' alt='tf' width='735px' height='276px' />
-
+      <img className='logo' src='assets/trillerfest-logo-735x276.png' alt='tf'/>
       <div className='content-outer'>
-        <img className='subscribe' src='assets/ty-subscribe-free-pass.png' alt='tf' width='733px' height='188px' />
+        <img className='subscribe' src='assets/ty-subscribe-free-pass.png' alt='tf' />
         <div className='copy-outer'>
         <p className='line-1'>
             3 days of quarantine sessions

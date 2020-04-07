@@ -7,7 +7,11 @@ body {
   * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
   }
+
+    // https://bits.theorem.co/css-pro-tips-responsive-font-sizes-and-when-to-use-which-units/
+  font-size: calc(1.3rem + 3.6vw);
 }
 
 .stage {
