@@ -32,7 +32,7 @@ export default (props) => (
         </p>
       </div>
     </div>
-    <p className='outer-copy'>
+    <p className='outer-copy' >
       We're driving donations for those deeply affected by COVID-19 and dancing our
       asses off at HOME.
     </p>
