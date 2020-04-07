@@ -16,12 +16,12 @@ export default () => {
       <Hero />
       <Signup />
       <Charities />
+      <JayPharoah />
     </div>
   )
 }
 
 /*
-      <JayPharoah />
       <InstaFeed />
       <Footer />
 */

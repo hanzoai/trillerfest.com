@@ -5,7 +5,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 
-  @media #{$media-phone} {
+  @media #{$smaller-than-ideal-stage} {
     height: 100vh;
     background-image: (url('../../public/assets/artists/main-hero-mobile-480x1100.png'));
   }
@@ -16,7 +16,7 @@
 
   header {
     height: 100px;
-    @media #{$media-phone} {
+    @media #{smaller-than-ideal-stage} {
       display: none;
     }
   }
@@ -26,7 +26,7 @@
     padding-bottom: $padding * 1.5;
     height: 100%;
 
-    @media #{$media-phone} {
+    @media #{$smaller-than-banners} {
       padding: $padding * 0.5;
     }
 
