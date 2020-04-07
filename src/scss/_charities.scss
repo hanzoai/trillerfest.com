@@ -13,15 +13,24 @@
     margin-bottom: 12px;
     font-size: 48px;
     font-weight: bold;
+    @media #{$smaller-than-banners} {
+      text-align: center;
+    }
+
   }
 
   .cards-outer {
     display: flex;
     flex-direction: row;
+    @media #{$smaller-than-banners} {
+      flex-direction: column;
+      align-items: center;
+    }    
+
 
     .card {
       width: 350px;
-      height: 580px;
+      height: 620px;
 
       padding: $padding;
 
@@ -39,13 +48,18 @@
       border-radius: 12px;
       &:first-child {
         margin-right: $padding;
+        @media #{$smaller-than-banners} {
+          margin-right: 0;
+          margin-bottom: $padding;
+        }
+    
       }
 
       .logo-outer {
         display: flex;
         flex-direction: column;
         align-items: center;
-        height: 370px; // so donate buttons line up
+        height: 330px; // so donate buttons line up
       }
 
       &.ram-card {
@@ -110,11 +124,18 @@
   p.outer-copy {
     text-align: center;
     color: #fb006a;
-    font-size: 52px;
+//    font-size: 52px;
     width: 1120px;
     font-weight: lighter;
     margin-top: $padding;
     margin-bottom: $padding;
+
+    @include fontSizeOfHeading(2);
+    @media #{$smaller-than-banners} {
+      width: auto;
+      @include fontSizeOfHeading(3);
+    }
+
   }
 
   span.copyright {
