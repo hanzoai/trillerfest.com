@@ -1,0 +1,81 @@
+.sign-up {
+
+  background-color: #ff006a;
+  min-height: 200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  padding: $padding;
+
+  .sign-up-stage {
+    width: $stage-width;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .form-outer {
+    h2 {
+      text-transform: uppercase;
+    }
+    form {
+      display: flex;
+      flex-direction: column;
+      margin-top: $padding;
+
+      .field-outer {
+        margin-bottom: 12px;
+          input {
+            padding: 8px 8px;
+            border-radius: 3px;
+            border: 1px solid #8842d5;
+            border-radius: 5px;  
+            font-size: 18px;
+            width: 100%;
+          }
+          p {
+            text-align: left;
+          }
+        }
+
+      button {
+        background-color: #087ee0;
+        color: #fff;
+        cursor: pointer;
+        overflow: hidden;
+        outline:none;
+
+
+        width: 160px;
+        padding: 8px 8px;
+        border-radius: 3px;
+        border: 1px solid black; 
+        border-radius: 5px;  
+        font-size: 18px;
+        &:hover {
+          background-color: #77b4e6;
+        }
+  }
+    }
+  }
+
+  .logos-outer {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .logo-card {
+    &:first-child {
+      margin-right: $padding * 1.5;
+    }
+
+    h3 {
+      color: #fff;
+      font-size: 30px;
+      text-transform: uppercase;
+      text-align: left;
+    }
+  }
+
+}

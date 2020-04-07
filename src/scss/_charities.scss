@@ -115,5 +115,10 @@
     margin-top: $padding;
     margin-bottom: $padding;
   }
+
+  span.copyright {
+    font-size: 12px;
+    vertical-align: super; 
+  }
 }
 

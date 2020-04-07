@@ -1,5 +1,6 @@
 import React from 'react'
-import Charities from './Charities'
+import Charities from './sections/Charities'
+import Signup from './sections/Signup'
 
 import './scss/styles.scss'
 
@@ -8,7 +9,7 @@ export default () => {
   return (
     <div className='stage'>
       <div className='hero' />
-      <div className='sign-up' />
+      <Signup />
       <Charities />
       <div className='jay-pharoah' />
       <div className='isnta' />
