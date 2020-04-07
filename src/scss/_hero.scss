@@ -70,19 +70,19 @@
       
       &.line-1 {
         font-size: 2rem;
-        @media #{$media-phone} {
+        @media #{$smaller-than-banners} {
           font-size: 1.3rem;
         }
       }
       &.line-2 {
         @include fontSizeOfHeading(1);
-        @media #{$media-phone} {
+        @media #{$smaller-than-banners} {
           font-size: 2.5rem;
         }
       }
       &.line-3 {
         @include fontSizeOfHeading(3);
-        @media #{$media-phone} {
+        @media #{$smaller-than-banners} {
           font-size: 1.2rem;
         }
         color: white;

@@ -11,5 +11,20 @@
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    @media #{$smaller-than-ideal-stage} {
+      width: auto;
+    }
+    @media #{$smaller-than-banners} {
+      flex-direction: column;
+    }
+
+    img.logo {
+      width: auto;
+      height: 180px;
+      @media #{$smaller-than-ideal-stage} {
+        height: 100px;
+      }
+    }
+
   }
 }

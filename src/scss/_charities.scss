@@ -131,7 +131,7 @@
     margin-bottom: $padding;
 
     @include fontSizeOfHeading(2);
-    @media #{$smaller-than-banners} {
+    @media #{$smaller-than-ideal-stage} {
       width: auto;
       @include fontSizeOfHeading(3);
     }

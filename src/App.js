@@ -18,10 +18,10 @@ export default () => {
       <Charities />
       <JayPharoah />
       <InstaFeed />
+      <Footer />
     </div>
   )
 }
 
 /*
-      <Footer />
 */
