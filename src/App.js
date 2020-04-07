@@ -5,6 +5,7 @@ import Charities from './sections/Charities'
 import Signup from './sections/Signup'
 import JayPharoah from './sections/JayPharoah'
 import InstaFeed from './sections/InstaFeed'
+import Footer from './sections/Footer'
 
 import './scss/styles.scss'
 
@@ -17,7 +18,7 @@ export default () => {
       <Charities />
       <JayPharoah />
       <InstaFeed />
-      <div className='footer' />
+      <Footer />
     </div>
   )
 }

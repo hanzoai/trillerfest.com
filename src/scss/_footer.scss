@@ -1,0 +1,11 @@
+.footer {
+
+  background-image: linear-gradient(to right, #12114d, #fb0069);
+
+  padding: $padding * 2;
+
+  .inner {
+    width: $stage-width;
+    margin: 0 auto;
+  }
+}
