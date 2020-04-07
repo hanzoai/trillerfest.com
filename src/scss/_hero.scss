@@ -1,8 +1,60 @@
 .hero {
 
-  min-height: 80vh;
+  height: 1000px;
   background-image: (url('../../public/assets/artists/main-hero.png'));
   background-repeat: no-repeat;
   background-size: cover;
 
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  header {
+    height: 100px;
+    width: 100%;
+  }
+
+  main {
+    width: $stage-width;
+
+    padding-bottom: $padding * 1.5;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-between;
+    
+    height: 100%;
+
+    img {
+      display: block;
+    }
+
+  }
+
+  .content-outer {
+    text-transform: uppercase;
+  }
+
+  .copy-outer {
+    margin-top: $padding;
+
+    p {
+      font-weight: bold;
+      color: $color-pink;
+      
+      &.line-1 {
+        font-size: 44px;
+      }
+      &.line-2 {
+        font-size: 80px;
+      }
+      &.line-3 {
+        font-size: 30px;
+        color: white;
+      }
+    }
+  }
 }
+
