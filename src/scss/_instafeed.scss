@@ -1,0 +1,25 @@
+.instafeed {
+
+  padding: $padding * 2 0px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #00003c;
+
+  h2 {
+    color: white;
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+
+  img {
+    display: block;
+
+    &.insta {
+      margin-top: $padding * 2;
+      margin-bottom: $padding * 2;
+    }
+  }
+}

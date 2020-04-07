@@ -4,6 +4,7 @@ import Hero from './sections/Hero'
 import Charities from './sections/Charities'
 import Signup from './sections/Signup'
 import JayPharoah from './sections/JayPharoah'
+import InstaFeed from './sections/InstaFeed'
 
 import './scss/styles.scss'
 
@@ -15,8 +16,7 @@ export default () => {
       <Signup />
       <Charities />
       <JayPharoah />
-      <div className='jay-pharoah' />
-      <div className='isnta' />
+      <InstaFeed />
       <div className='footer' />
     </div>
   )
