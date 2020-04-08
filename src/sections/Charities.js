@@ -6,7 +6,7 @@ const onDonate = () => {
 
 export default (props) => (
   <div className='charities' >
-    <h2 className='section-title'>Benefiting:</h2>
+    <h2 className='section-title'>Benefiting</h2>
     <div className='cards-outer'>
       <div className='card ram-card'>
         <div className='logo-outer'>
