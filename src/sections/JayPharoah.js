@@ -8,7 +8,7 @@ export default (props) => (
       <h3>Our Host</h3>
       <h2>Jay Pharoah</h2>
     </div>
-    <img src='assets/jay-589x864.png' alt='jay' />
-    <SocialIcons />
+    <img src='assets/jay-589x677.png' alt='jay' />
+    <SocialIcons size='50px' />
   </div>
 )

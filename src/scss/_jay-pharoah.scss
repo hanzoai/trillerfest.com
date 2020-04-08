@@ -1,11 +1,8 @@
 .jay-pharoah {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
-
-  @media #{$smaller-than-banners} {
-    flex-direction: column;
-  }    
+  align-items: center;
 
   background-color: #000;
   color: #fff;
@@ -15,20 +12,16 @@
   img {
     display: block;
     margin-right: $padding * 1.5;
-    @media #{$smaller-than-ideal-stage} {
-      width: auto;
-      height: 90%;  // hack... doesn't work in edge case
-    }
+    width: 589px;
+    height: 677px;
+    margin-bottom: $padding;
     @media #{$smaller-than-banners} {
-      width: 100%;
-      margin-right: 0;
-      margin-bottom: $padding;
-    }    
+      width: 295px;
+      height: 339px;
+      }    
   }
 
   .copy-outer {
-    width: 500px;
-    font-size: 18px;
 
     @media #{$media-phone} {
       width: auto;
@@ -38,17 +31,20 @@
       text-transform: uppercase;
       color: $color-pink;
       @include fontSizeOfHeading(3);
+      text-align: center;
     }
     h2 {
       font-style: italic;
       text-transform: uppercase;
       @include fontSizeOfHeading(2);
+      text-align: center;
       margin-bottom: $padding * 2;
       @media #{$media-phone} {
         margin-bottom: $padding;
       }    
     }
 
+    /*
     p, table {
       font-size: 24px;
     }
@@ -62,5 +58,6 @@
         padding-bottom: $padding;
       }
     }
+    */
   }
 }
