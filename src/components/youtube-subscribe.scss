@@ -1,8 +1,4 @@
-$media-phone: "(max-width: 481px)";
-
-$smaller-than-banners: "(max-width: 740px)";
-
-$smaller-than-ideal-stage: "(max-width: 1120px)";
+@import '../scss/responsivity';
 
 .subscribe {
 
