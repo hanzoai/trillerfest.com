@@ -1,14 +1,14 @@
 .hero {
 
-  height: 1000px;
-  background-image: (url('../../public/assets/artists/main-hero.png'));
+  height: 100vh;
+  background-image: (url('../../public/assets/artists/migos.jpg'));
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right top;
 
   @media #{$smaller-than-ideal-stage} {
     height: 100vh;
-    background-image: (url('../../public/assets/artists/main-hero-mobile-480x1100.png'));
+    // background-image: (url('../../public/assets/artists/main-hero-mobile-480x1100.png'));
   }
 
   display: flex;
@@ -40,7 +40,7 @@
       @media #{$smaller-than-banners} {
         width: 80vw;
         height: auto;
-      }    
+      }
     }
     img.subscribe {
       width: 733px;
@@ -48,7 +48,7 @@
       @media #{$smaller-than-banners} {
         width: 80vw;
         height: auto;
-      }    
+      }
     }
   }
 
@@ -62,7 +62,7 @@
     p {
       font-weight: bold;
       color: $color-pink;
-      
+
       &.line-1 {
         font-size: 2rem;
         @media #{$smaller-than-banners} {
