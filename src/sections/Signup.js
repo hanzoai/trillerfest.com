@@ -1,56 +1,32 @@
 import React from 'react'
 import { Formik, Form, Field } from 'formik'
 
-const onSubmit = (values) => {
-  console.log(values)
-}
-
-const validateEmail = (value) => {
-  let error
-  if (!value) {
-    error = 'Required'
-  } else if (!/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)) {
-    error = 'Invalid email address'
-  }
-  return error
-}
-
-const validateTelephone = (value) => {
-  let error
-  if (!value) {
-    error = 'Required'
-  } else if (!/^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/i.test(value)) {
-    error = 'Invalid phone number'
-  }
-  return error
-}
-
 export default (props) => (
   <div className='sign-up' >
     <div className='sign-up-stage' >
       <div className='form-outer'>
         <h2>Sign up for promotions and more</h2>
         <Formik
-          initialValues={{ email: '', telephone: '' }}
+          initialValues={{ emailOrPhone: ''}}
           onSubmit={ onSubmit }
         >
           {({
             errors,
             touched,
-            isValidating,
-          }) => (
+            isSubmitting
+          }) => {
+            const invalid = (errors.emailOrPhone && touched.emailOrPhone) 
+            const buttonParam = (invalid || isSubmitting) ? {disabled: true} : {}
+
+            return (
             <Form>
               <div className='field-outer'>
-                <Field name='email' validate={validateEmail} placeholder='email'/>
-                {errors.email && touched.email && <p className='error-message'>{errors.email}</p>}
+                <Field name='emailOrPhone' validate={validateEither} placeholder='email or phone'/>
+                <p className={`error-message ${(invalid ? 'has-error' : 'no-error')}`}>{`*${errors.emailOrPhone}`}</p>
               </div>
-              <div className='field-outer'>
-                <Field name='telephone' validate={validateTelephone} placeholder='phone' />
-                {errors.telephone && touched.telephone && <p className='error-message'>{errors.telephone}</p>}
-              </div>
-              <button type="submit">Get Updates</button>
+              <button type="submit" {...buttonParam}>{(isSubmitting) ? 'sending...' : 'Get Updates'}</button>
             </Form>
-          )}
+          )}}
         </Formik>
       </div>
       <div className='logos-outer'>
@@ -70,3 +46,28 @@ export default (props) => (
     </div>
   </div>
 )
+
+const onSubmit = (values, { setSubmitting, clear }) => {
+  //console.log(JSON.stringify(values, null, 2))
+  //console.log(JSON.stringify(obj, null, 2))
+  setTimeout(() => {
+    setSubmitting(false)
+
+  }, 1000)
+}
+
+const validateEither = (value) => {
+  let error
+  if (!value) {
+    error = 'email or phone is required'
+  } 
+  else if (
+    !/^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/i.test(value)
+    &&
+    !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,4}$/i.test(value)
+  ) {
+    error = 'not a valid email or phone number'
+  }
+  return error
+}
+
