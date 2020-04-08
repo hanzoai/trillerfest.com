@@ -32,7 +32,7 @@ export default (props) => (
       <div className='logos-outer'>
         <div className='logo-card logo-card-triller'>
           <h3>Download App</h3>
-          <a href="https://itunes.apple.com/us/app/triller-social-video-platform/id994905763">
+          <a href="https://www.triller.co">
             <img src='assets/triller-logo-245x245.png' width='245px' height='245px' alt='triller' />
           </a>
         </div>
