@@ -15,7 +15,7 @@ export default (props) => (
             touched,
             isSubmitting
           }) => {
-            const invalid = (errors.emailOrPhone && touched.emailOrPhone) 
+            const invalid = (errors.emailOrPhone && touched.emailOrPhone)
             const buttonParam = (invalid || isSubmitting) ? {disabled: true} : {}
 
             return (
@@ -47,12 +47,20 @@ export default (props) => (
   </div>
 )
 
+const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1ODYzNjU2MDIsInN1YiI6Iks4VDFYb08ydTAiLCJqdGkiOiJCT3VPVkp1VElqZyIsIm5hbWUiOiJsaXZlLXB1Ymxpc2hlZC1rZXkiLCJiaXQiOjQ1MDM2MTcwNzU2NzUxNzJ9.G6o7vniZ4fKqJk_xXw7EkfX0Va4KIiQDwp5l0TBwEwg'
+const endpoint = 'https://api.hanzo.ai/form/lDuQEQ99F02vmn/subscribe'
+
 const onSubmit = (data, { setSubmitting, resetForm }) => {
   setTimeout(() => {
-    window.fetch("/", {
+    window.fetch(endpoint, {
       method: "POST",
-      headers: { "Content-Type": "application/x-www-form-urlencoded" },
-      body: encode({ "form-name": "updates", ...data })
+      headers: {
+        'Authorization': token,
+        'Content-Type':  'application/json',
+      },
+      body: JSON.stringify({
+        'email': data.emailOrPhone,
+      })
     })
     .then(() => {console.log("form success :) ")})
     .catch(error => console.log(error))
@@ -67,7 +75,7 @@ const validateEither = (value) => {
   let error
   if (!value) {
     error = 'email or phone is required'
-  } 
+  }
   else if (
     !/^\+?([0-9]{2})\)?[-. ]?([0-9]{4})[-. ]?([0-9]{4})$/i.test(value)
     &&
@@ -76,10 +84,4 @@ const validateEither = (value) => {
     error = 'not a valid email or phone number'
   }
   return error
-}
-
-const encode = (data) => {
-  return Object.keys(data)
-      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
-      .join("&");
 }
