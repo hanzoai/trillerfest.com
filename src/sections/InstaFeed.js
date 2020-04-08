@@ -3,14 +3,17 @@ import React from 'react'
 import YouTubeSubscribe from '../components/YouTubeSubscribe'
 import InstagramMatrix from '../components/InstagramMatrix'
 
+import useWindowDimensions from '../util'
 
-export default (props) => (
+export default (props) => {
+  const { width } = useWindowDimensions();
+  return (
   <div className='instafeed' >
     <h2>Triller Insta Feed</h2>
-    <InstagramMatrix size={150} />
+    <InstagramMatrix size={(width > 451) ? 150 : 320} />
     <YouTubeSubscribe />
   </div>
-)
+)}
 
 /* 
     <a href="https://instagram.com/trillervids">
