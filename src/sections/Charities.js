@@ -33,8 +33,7 @@ export default (props) => (
       </div>
     </div>
     <p className='outer-copy' >
-      We're driving donations for those deeply affected by COVID-19 and dancing our
-      asses off at HOME.
+      We're driving donations for those deeply affected by COVID-19
     </p>
   </div>
 )
