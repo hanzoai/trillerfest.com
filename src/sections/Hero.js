@@ -3,9 +3,6 @@ import YouTubeSubscribe from '../components/YouTubeSubscribe'
 
 export default (props) => (
   <div className='hero'>
-    <header>
-
-    </header>
     <main>
       <img className='logo' src='assets/trillerfest-logo-735x276.png' alt='tf'/>
       <div className='content-outer'>

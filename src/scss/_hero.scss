@@ -4,6 +4,7 @@
   background-image: (url('../../public/assets/artists/main-hero.png'));
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: right top;
 
   @media #{$smaller-than-ideal-stage} {
     height: 100vh;
@@ -14,16 +15,10 @@
   flex-direction: column;
   align-items: center;
 
-  header {
-    height: 100px;
-    @media #{smaller-than-ideal-stage} {
-      display: none;
-    }
-  }
-
   main {
     max-width: $stage-width;
     padding-bottom: $padding * 1.5;
+    padding-top: $padding * 2;
     height: 100%;
 
     @media #{$smaller-than-banners} {
