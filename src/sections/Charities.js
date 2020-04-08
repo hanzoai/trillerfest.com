@@ -25,7 +25,7 @@ export default (props) => (
         <div className='logo-outer'>
           <img src='assets/nkh-logo-313x297.png' alt='nkh' width='313px' height='297px' />
         </div>
-        <button onClick={onDonate}>Make Donation</button>
+        <button onClick={onDonate}>Donate Now</button>
         <p className='copy'>
           No Kid Hungry is working to end child hunger in Amercia today my ensuring
           that all children get the healthy food they need every day to thrive.
