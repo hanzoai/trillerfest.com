@@ -3,6 +3,7 @@ import React from 'react'
 import Hero from './sections/Hero'
 import Charities from './sections/Charities'
 import Signup from './sections/Signup'
+import Artists from './sections/Artists'
 import JayPharoah from './sections/JayPharoah'
 import InstaFeed from './sections/InstaFeed'
 import Footer from './sections/Footer'
@@ -18,6 +19,7 @@ export default () => {
     <div className='stage'>
       <Hero />
       <Signup />
+      <Artists />
       <Charities />
       <JayPharoah />
       <InstaFeed />
