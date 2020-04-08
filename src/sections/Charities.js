@@ -1,7 +1,10 @@
 import React from 'react'
 
-const onDonate = () => {
-  console.log('donate clicked')
+const onDonateKid = () => {
+  window.open('http://nokidhungry.org/trillerfest', '_blank')
+}
+const onDonateRA = () => {
+  window.open('https://www.grammy.com/musicares/donations?utm_source=Triller&utm_medium=partner&utm_campaign=TrillerCovid19', '_blank')
 }
 
 export default (props) => (
@@ -14,7 +17,7 @@ export default (props) => (
           <p className='title title-1'>Recording Academy<span className='copyright'>&reg;</span></p>
           <p className='title title-2'>Musicares<span className='copyright'>&reg;</span></p>
         </div>
-        <button onClick={onDonate}>Donate Now</button>
+        <button onClick={onDonateRA}>Donate Now</button>
         <p className='copy'>
           The Recording Academy&reg; and its affiliated charitable foundation
           MusiCares&reg; have established the COVID-19 Relief Fund to help our
@@ -25,7 +28,7 @@ export default (props) => (
         <div className='logo-outer'>
           <img src='assets/nkh-logo-313x297.png' alt='nkh' width='313px' height='297px' />
         </div>
-        <button onClick={onDonate}>Donate Now</button>
+        <button onClick={onDonateKid}>Donate Now</button>
         <p className='copy'>
           No Kid Hungry is working to end child hunger in Amercia today my ensuring
           that all children get the healthy food they need every day to thrive.
