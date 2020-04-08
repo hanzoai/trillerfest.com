@@ -18,7 +18,7 @@ export default (props) => (
           Fri 4/10 - Sun 4/12
         </p>
         <p className='line-3'>
-          the largest virtual live music concert ever.
+          the largest virtual music festival ever.
         </p>
         </div>
       </div>
