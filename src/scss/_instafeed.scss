@@ -12,6 +12,7 @@
     color: white;
     @include fontSizeOfHeading(2);
     text-transform: uppercase;
+    margin-bottom: $padding;
   }
 
   img {
@@ -21,12 +22,14 @@
     &.subscribe {
       width: 733px;
       height: 188px;
-        @media #{$smaller-than-banners} {
+      margin-top: $padding;
+      @media #{$smaller-than-banners} {
         width: 80vw;
         height: auto;
       }
     }
 
+      /*
     &.insta {
       width: 1109px;
       height: 1068px;
@@ -39,5 +42,7 @@
         margin-bottom: $padding;
         }
     }
+    */
   }
+  
 }
