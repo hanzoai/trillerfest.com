@@ -1,0 +1,25 @@
+$media-phone: "(max-width: 481px)";
+
+$smaller-than-banners: "(max-width: 740px)";
+
+$smaller-than-ideal-stage: "(max-width: 1120px)";
+
+.subscribe {
+
+  background-image: url('../../public/assets/ty-subscribe-free-pass-600x154.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 600px;
+  height: 154px;
+  
+  @media #{$smaller-than-banners} {
+    background-image: url('../../public/assets/ty-subscribe-free-pass-300x77.png');
+    width: 300px;
+    height: 77px;
+  }
+
+  opacity: 0.9;
+  &:hover {
+    opacity: 1;
+  }
+}
