@@ -18,7 +18,7 @@
     @media #{$smaller-than-banners} {
       width: 295px;
       height: 339px;
-      }    
+    }    
   }
 
   .copy-outer {
@@ -43,21 +43,5 @@
         margin-bottom: $padding;
       }    
     }
-
-    /*
-    p, table {
-      font-size: 24px;
-    }
-
-    table {
-      margin-top: $padding;
-      font-size: 28px;
-      td {
-        vertical-align: top; 
-        padding-right: $padding;
-        padding-bottom: $padding;
-      }
-    }
-    */
   }
 }
