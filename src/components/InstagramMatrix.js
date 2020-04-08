@@ -19,7 +19,7 @@ const URL_PREFIX = 'https://www.instagram.com/'
 const URL_POSTFIX = 'media/?size='
 
 const SIZES = {
-  150: 'm',
+  150: 't',
   320: 'm'
 }
 
