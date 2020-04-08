@@ -13,9 +13,7 @@ export default (props) => (
     <div className='cards-outer'>
       <div className='card ram-card'>
         <div className='logo-outer'>
-          <img src='assets/ram-logo-242x241.png' alt='ram' width='242px' height='241px' />
-          <p className='title title-1'>Recording Academy<span className='copyright'>&reg;</span></p>
-          <p className='title title-2'>Musicares<span className='copyright'>&reg;</span></p>
+          <img src='assets/ram-logo-242x241.png' alt='ram' width='313px' height='313px' />
         </div>
         <button onClick={onDonateRA}>Donate Now</button>
         <p className='copy'>
