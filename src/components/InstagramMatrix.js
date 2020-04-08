@@ -19,7 +19,7 @@ const URL_PREFIX = 'https://www.instagram.com/'
 const URL_POSTFIX = 'media/?size='
 
 const SIZES = {
-  150: 't', 
+  150: 'm',
   320: 'm'
 }
 
@@ -31,6 +31,6 @@ export default ({ size }) => (
           <img src={`${URL_PREFIX}${d}${URL_POSTFIX}${SIZES[size]}`} width={size} height='auto' alt='img'/>
         </a>
       )
-    })}  
+    })}
   </div>
 )
