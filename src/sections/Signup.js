@@ -47,13 +47,20 @@ export default (props) => (
   </div>
 )
 
-const onSubmit = (values, { setSubmitting, clear }) => {
-  //console.log(JSON.stringify(values, null, 2))
-  //console.log(JSON.stringify(obj, null, 2))
+const onSubmit = (data, { setSubmitting, resetForm }) => {
   setTimeout(() => {
-    setSubmitting(false)
-
-  }, 1000)
+    window.fetch("/", {
+      method: "POST",
+      headers: { "Content-Type": "application/x-www-form-urlencoded" },
+      body: encode({ "form-name": "updates", ...data })
+    })
+    .then(() => {console.log("form success :) ")})
+    .catch(error => console.log(error))
+    .finally(() => {
+      setSubmitting(false)
+      resetForm({})
+    })
+  }, 600);
 }
 
 const validateEither = (value) => {
@@ -71,3 +78,8 @@ const validateEither = (value) => {
   return error
 }
 
+const encode = (data) => {
+  return Object.keys(data)
+      .map(key => encodeURIComponent(key) + "=" + encodeURIComponent(data[key]))
+      .join("&");
+}
