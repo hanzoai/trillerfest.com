@@ -1,19 +1,44 @@
 .hero {
 
   height: 1000px;
-  background-image: (url('../../public/assets/artists/main-hero.png'));
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: right top;
+  // background-image: (url('../../public/assets/artists/main-hero.png'));
+  // background-repeat: no-repeat;
+  // background-size: cover;
+  // background-position: right top;
 
   @media #{$smaller-than-ideal-stage} {
     height: 100vh;
-    background-image: (url('../../public/assets/artists/main-hero-mobile-480x1100.png'));
+    // background-image: (url('../../public/assets/artists/main-hero-mobile-480x1100.png'));
   }
 
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  .hero-slider {
+    width: 100%;
+    height: 1000px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+    @media #{$smaller-than-ideal-stage} {
+      height: 100vh;
+      // background-image: (url('../../public/assets/artists/main-hero-mobile-480x1100.png'));
+    }
+
+    * {
+      width: 100%;
+      height: 100%;
+      background-size: cover;
+      background-position: 100% 50%;
+
+      @media #{$smaller-than-ideal-stage} {
+        background-position: 90% 50%;
+      }
+    }
+  }
 
   main {
     max-width: $stage-width;
@@ -36,19 +61,24 @@
     }
     img.logo {
       width: 735px;
-      height: 276px;
+      // height: 276px;
+      max-width: 40vw;
+
       @media #{$smaller-than-banners} {
         width: 80vw;
+        max-width: 80vw;
         height: auto;
-      }    
+      }
     }
     img.subscribe {
       width: 733px;
-      height: 188px;
+      max-width: 40vw;
+      // height: 188px;
       @media #{$smaller-than-banners} {
         width: 80vw;
+        max-width: 80vw;
         height: auto;
-      }    
+      }
     }
   }
 
@@ -62,7 +92,7 @@
     p {
       font-weight: bold;
       color: $color-pink;
-      
+
       &.line-1 {
         font-size: 2rem;
         @media #{$smaller-than-banners} {
