@@ -1,6 +1,7 @@
 import React from 'react'
 import YouTubeSubscribe from '../components/YouTubeSubscribe'
 import { Zoom } from 'react-slideshow-image'
+import YoutubeBackground from 'react-youtube-background'
 
 const slideImages = [
   {
@@ -61,14 +62,18 @@ const properties = {
 
 export default (props) => (
   <div className='hero'>
+    <YoutubeBackground className='yt-bg' videoId='A_Yej21Hw70'>
+    </YoutubeBackground>
     <main>
-      <Zoom className='hero-slider' {...properties}>
-        {
-          slideImages.map((img) => (
-            <div className='hero-slide' style={{'backgroundImage': `url(${img.img})`}}/>
-          ))
-        }
-      </Zoom>
+      {
+        // <Zoom className='hero-slider' {...properties}>
+        //   {
+        //     slideImages.map((img) => (
+        //       <div className='hero-slide' style={{'backgroundImage': `url(${img.img})`}}/>
+        //     ))
+        //   }
+        // </Zoom>
+      }
       <img className='logo' src='assets/trillerfest-logo-735x276.png' alt='tf'/>
       <div className='content-outer'>
         <YouTubeSubscribe />
@@ -84,7 +89,6 @@ export default (props) => (
         </p>
         </div>
       </div>
-
     </main>
   </div>
 )
