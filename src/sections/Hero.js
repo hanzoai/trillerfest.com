@@ -49,11 +49,11 @@ shuffleArray(slideImages)
 
 const properties = {
   duration: 5000,
-  transitionDuration: 500,
+  transitionDuration: 600,
   infinite: true,
   indicators: false,
   arrows: false,
-  pauseOnHover: true,
+  pauseOnHover: false,
   onChange: (oldIndex, newIndex) => {
     console.log(`slide transition from ${oldIndex} to ${newIndex}`);
   }
