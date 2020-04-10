@@ -1,5 +1,6 @@
 import React from 'react'
 import { Formik, Form, Field } from 'formik'
+import analytics from '../analytics'
 
 export default (props) => (
   <div className='sign-up' >
@@ -62,7 +63,7 @@ const onSubmit = (data, { setSubmitting, resetForm }) => {
         'email': data.emailOrPhone,
       })
     })
-    .then(() => {console.log("form success :) ")})
+    .then(() => { analytics.subscribe('Email') })
     .catch(error => console.log(error))
     .finally(() => {
       setSubmitting(false)
