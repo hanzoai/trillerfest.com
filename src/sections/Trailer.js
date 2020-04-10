@@ -4,6 +4,6 @@ import YouTube from 'react-youtube-embed'
 
 export default (props) => (
   <div className='trailer' >
-    <YouTube id='8dm_VFeZFgQ' />
+    <YouTube id='iHW2Z5gR0k8' />
   </div>
 )
