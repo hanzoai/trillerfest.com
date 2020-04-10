@@ -28,7 +28,7 @@ export default (props) => (
         </div>
         <button onClick={onDonateKid}>Donate Now</button>
         <p className='copy'>
-          No Kid Hungry is working to end child hunger in Amercia today my ensuring
+          No Kid Hungry is working to end child hunger in Amercia today by ensuring
           that all children get the healthy food they need every day to thrive.
         </p>
       </div>
