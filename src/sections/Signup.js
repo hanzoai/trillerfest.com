@@ -63,7 +63,7 @@ const onSubmit = (data, { setSubmitting, resetForm }) => {
         'email': data.emailOrPhone,
       })
     })
-    .then(() => { analytics.subscribe('Email') })
+    .then(() => { analytics.subscribe('Updates') })
     .catch(error => console.log(error))
     .finally(() => {
       setSubmitting(false)
