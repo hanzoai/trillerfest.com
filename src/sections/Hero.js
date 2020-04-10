@@ -82,15 +82,17 @@ export default (props) => (
           the largest virtual music festival
         </p>
         </div>
-        <a href='https://www.youtube.com/c/trillervids?sub_confirmation=1' target='_blank'>
-          <img className='watch-button' src='assets/yt-watch.png' alt='Watch on Youtube'/>
-        </a>
-        <a href='https://www.twitch.tv/triller' target='_blank'>
-          <img className='watch-button' src='assets/twitch-watch.png' alt='Watch on Twitch'/>
-        </a>
-        <a href='https://www.caffeine.tv/Triller' target='_blank'>
-          <img className='watch-button' src='assets/caffeine-watch.png' alt='Watch on Caffeine'/>
-        </a>
+        <div className='buttons'>
+          <a href='https://www.youtube.com/c/trillervids?sub_confirmation=1' target='_blank'>
+            <img className='watch-button' src='assets/yt-watch.png' alt='Watch on Youtube'/>
+          </a>
+          <a href='https://www.twitch.tv/triller' target='_blank'>
+            <img className='watch-button' src='assets/twitch-watch.png' alt='Watch on Twitch'/>
+          </a>
+          <a href='https://www.caffeine.tv/Triller' target='_blank'>
+            <img className='watch-button' src='assets/caffeine-watch.png' alt='Watch on Caffeine'/>
+          </a>
+        </div>
       </div>
 
     </main>

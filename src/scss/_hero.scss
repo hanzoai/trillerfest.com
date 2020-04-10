@@ -71,15 +71,34 @@
         height: auto;
       }
     }
-
-    img.watch-button {
-      height: 100px;
-      padding: 8px 0;
-    }
   }
 
   .content-outer {
     text-transform: uppercase;
+  }
+
+  .buttons {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+
+    @media #{$smaller-than-banners} {
+      display: block;
+      max-width: 80vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    a {
+      display: block;
+
+      img {
+        max-width: 100%;
+        padding: 8px;
+      }
+    }
   }
 
   .copy-outer {
@@ -90,16 +109,22 @@
       color: $color-pink;
 
       &.line-1 {
-        font-size: 1.5rem;
+        font-size: 2rem;
+        @media #{$smaller-than-banners} {
+          font-size: 1.3rem;
+        }
       }
       &.line-2 {
-        font-size: 3rem;
+        @include fontSizeOfHeading(1);
         @media #{$smaller-than-banners} {
-          font-size: 2rem;
+          font-size: 2.5rem;
         }
       }
       &.line-3 {
-        font-size: 1rem;
+        @include fontSizeOfHeading(3);
+        @media #{$smaller-than-banners} {
+          font-size: 1.2rem;
+        }
         color: white;
       }
     }
