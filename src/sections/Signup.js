@@ -5,9 +5,6 @@ export default (props) => (
   <div className='sign-up' >
     <div className='sign-up-stage' >
       <div className='form-outer'>
-        <br/>
-        <br/>
-        <br/>
         <h2 style={{ color: 'white' }}>Sign up for promotions and more</h2>
         <Formik
           initialValues={{ emailOrPhone: ''}}
