@@ -15,6 +15,7 @@
     padding-bottom: $padding * 1.5;
     padding-top: $padding * 2;
     height: 100%;
+    text-align: center;
 
     img.subscribe {
       width: 733px;
@@ -24,6 +25,12 @@
         height: auto;
       }
     }
+  }
+
+  .lineup {
+    max-width: 1000px;
+    width: 80vw;
+    margin-bottom: 20vh;
   }
 
   .artist-names {
