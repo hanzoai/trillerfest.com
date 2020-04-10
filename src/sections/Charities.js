@@ -9,6 +9,10 @@ const onDonateRA = () => {
 
 export default (props) => (
   <div className='charities' >
+    <p className='outer-copy' >
+      We're driving donations for those deeply affected by COVID-19
+    </p>
+
     <h2 className='section-title'>Benefiting</h2>
     <div className='cards-outer'>
       <div className='card ram-card'>
@@ -33,8 +37,5 @@ export default (props) => (
         </p>
       </div>
     </div>
-    <p className='outer-copy' >
-      We're driving donations for those deeply affected by COVID-19
-    </p>
   </div>
 )

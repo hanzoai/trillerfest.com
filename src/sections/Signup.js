@@ -5,7 +5,10 @@ export default (props) => (
   <div className='sign-up' >
     <div className='sign-up-stage' >
       <div className='form-outer'>
-        <h2>Sign up for promotions and more</h2>
+        <br/>
+        <br/>
+        <br/>
+        <h2 style={{ color: 'white' }}>Sign up for promotions and more</h2>
         <Formik
           initialValues={{ emailOrPhone: ''}}
           onSubmit={ onSubmit }
@@ -23,8 +26,8 @@ export default (props) => (
               <div className='field-outer'>
                 <Field name='emailOrPhone' validate={validateEither} placeholder='email or phone'/>
                 <p className={`error-message ${(invalid ? 'has-error' : 'no-error')}`}>{`*${errors.emailOrPhone}`}</p>
+                <button type="submit" {...buttonParam}>{(isSubmitting) ? 'sending...' : 'Get Updates'}</button>
               </div>
-              <button type="submit" {...buttonParam}>{(isSubmitting) ? 'sending...' : 'Get Updates'}</button>
             </Form>
           )}}
         </Formik>

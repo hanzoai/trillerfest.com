@@ -19,9 +19,9 @@ export default () => {
   return (
     <div className='stage'>
       <Hero />
+      <Charities />
       <Signup />
       <Artists />
-      <Charities />
       <JayPharoah />
       <Trailer />
       <InstaFeed />
