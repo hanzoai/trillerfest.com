@@ -71,6 +71,11 @@
         height: auto;
       }
     }
+
+    img.watch-button {
+      height: 100px;
+      padding: 8px 0;
+    }
   }
 
   .content-outer {
@@ -85,22 +90,16 @@
       color: $color-pink;
 
       &.line-1 {
-        font-size: 2rem;
-        @media #{$smaller-than-banners} {
-          font-size: 1.3rem;
-        }
+        font-size: 1.5rem;
       }
       &.line-2 {
-        @include fontSizeOfHeading(1);
+        font-size: 3rem;
         @media #{$smaller-than-banners} {
-          font-size: 2.5rem;
+          font-size: 2rem;
         }
       }
       &.line-3 {
-        @include fontSizeOfHeading(3);
-        @media #{$smaller-than-banners} {
-          font-size: 1.2rem;
-        }
+        font-size: 1rem;
         color: white;
       }
     }
