@@ -50,5 +50,29 @@
     }
     */
   }
-  
+
+  .content-outer {
+    text-transform: uppercase;
+    margin-top: 40px;
+    text-align: center;
+
+    display: flex;
+    width: 100%;
+
+    @media #{$smaller-than-banners} {
+      display: block;
+      max-width: 80vw;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    a {
+      display: block;
+
+      img {
+        max-width: 100%;
+        padding: 8px;
+      }
+    }
+  }
 }
