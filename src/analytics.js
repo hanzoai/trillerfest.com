@@ -16,6 +16,7 @@ const labels = {
   caffeine: 'Caffeine',
   twitch:   'Twitch',
   youtube:  'YouTube',
+  updates:  'Updates',
 }
 
 function watch(platform) {
