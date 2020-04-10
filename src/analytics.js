@@ -24,7 +24,7 @@ function watch(platform) {
     action:   `${labels[platform]} Watch`
   })
 
-  if (platform == 'youtube') subscribe()
+  if (platform == 'youtube') subscribe(platform)
 }
 
 function subscribe(platform) {
