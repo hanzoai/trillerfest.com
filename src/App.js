@@ -7,6 +7,7 @@ import Artists from './sections/Artists'
 import JayPharoah from './sections/JayPharoah'
 import InstaFeed from './sections/InstaFeed'
 import Footer from './sections/Footer'
+import Trailer from './sections/Trailer'
 import analytics from './analytics'
 
 import './scss/styles.scss'
@@ -22,6 +23,7 @@ export default () => {
       <Artists />
       <Charities />
       <JayPharoah />
+      <Trailer />
       <InstaFeed />
       <Footer />
     </div>
