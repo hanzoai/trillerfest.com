@@ -26,7 +26,7 @@ export default (props) => (
               <div className='field-outer'>
                 <Field name='emailOrPhone' validate={validateEither} placeholder='email or phone'/>
                 <p className={`error-message ${(invalid ? 'has-error' : 'no-error')}`}>{`*${errors.emailOrPhone}`}</p>
-                <button type="submit" {...buttonParam}>{(isSubmitting) ? 'sending...' : 'Get Updates'}</button>
+                <button style={{fontWeight: '600'}} type="submit" {...buttonParam}>{(isSubmitting) ? 'sending...' : 'GET UPDATES'}</button>
               </div>
             </Form>
           )}}
