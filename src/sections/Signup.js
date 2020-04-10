@@ -48,7 +48,7 @@ export default (props) => (
   </div>
 )
 
-const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1ODYzNjU2MDIsInN1YiI6Iks4VDFYb08ydTAiLCJqdGkiOiJCT3VPVkp1VElqZyIsIm5hbWUiOiJsaXZlLXB1Ymxpc2hlZC1rZXkiLCJiaXQiOjQ1MDM2MTcwNzU2NzUxNzJ9.G6o7vniZ4fKqJk_xXw7EkfX0Va4KIiQDwp5l0TBwEwg'
+const token = 'eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpYXQiOjE1ODY1NTI2OTUsInN1YiI6Iks4VDFYb08ydTAiLCJqdGkiOiJSVWFlNVRUWjVhYyIsIm5hbWUiOiJsaXZlLXB1Ymxpc2hlZC1rZXkiLCJiaXQiOjQ1MDM2MTcwNzU2NzUxNzJ9.LLj3RZJjcX01Q4fPIZd6rf7iVNaMXmNclcAKYiCyHZs';
 const endpoint = 'https://api.hanzo.ai/form/lDuQEQ99F02vmn/subscribe'
 
 const onSubmit = (data, { setSubmitting, resetForm }) => {
