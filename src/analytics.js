@@ -11,16 +11,32 @@ function pageview() {
   ReactGA.pageview(window.location.pathname + window.location.search)
 }
 
-function subscribe() {
+
+const labels = {
+  caffeine: 'Caffeine',
+  twitch:   'Twitch',
+  youtube:  'YouTube',
+}
+
+function watch(platform) {
   ReactGA.event({
     category: 'User',
-    action:   'YouTube Subscribe'
+    action:   `${labels[platform]} Watch`
+  })
+
+  if (platform == 'youtube') subscribe()
+}
+
+function subscribe(platform) {
+  ReactGA.event({
+    category: 'User',
+    action:   `${labels[platform]} Subscribe`
   })
 
   ReactFB.track('Subscribe', {
     value: '0.00',
     currency: 'USD',
-    predicted_ltv: '0.00'
+    predicted_ltv: '0.00',
   })
 }
 
@@ -28,4 +44,5 @@ export default {
   init: init,
   pageview: pageview,
   subscribe: subscribe,
+  watch: watch,
 }

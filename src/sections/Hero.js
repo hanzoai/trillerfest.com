@@ -1,5 +1,5 @@
 import React from 'react'
-import YouTubeSubscribe from '../components/YouTubeSubscribe'
+import Watch from '../components/Watch'
 import { Zoom } from 'react-slideshow-image'
 
 const slideImages = [
@@ -83,15 +83,7 @@ export default (props) => (
         </p>
         </div>
         <div className='buttons'>
-          <a href='https://www.youtube.com/c/trillervids?sub_confirmation=1' target='_blank'>
-            <img className='watch-button' src='assets/yt-watch.png' alt='Watch on Youtube'/>
-          </a>
-          <a href='https://www.twitch.tv/triller' target='_blank'>
-            <img className='watch-button' src='assets/twitch-watch.png' alt='Watch on Twitch'/>
-          </a>
-          <a href='https://www.caffeine.tv/Triller' target='_blank'>
-            <img className='watch-button' src='assets/caffeine-watch.png' alt='Watch on Caffeine'/>
-          </a>
+          <Watch />
         </div>
       </div>
 
