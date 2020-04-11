@@ -1,10 +1,14 @@
 import React from 'react'
 
+import analytics from '../analytics'
+
 const onDonateKid = () => {
   window.open('http://nokidhungry.org/trillerfest', '_blank')
+  analytics.donate('nkh')
 }
 const onDonateRA = () => {
   window.open('https://www.grammy.com/musicares/donations?utm_source=Triller&utm_medium=partner&utm_campaign=TrillerCovid19', '_blank')
+  analytics.donate('ram')
 }
 
 export default (props) => (
