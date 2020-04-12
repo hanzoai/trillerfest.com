@@ -9,8 +9,9 @@ export default (props) => (
       <br/>
       <br/>
       <br/>
-      <img className='lineup' src='assets/friday.png' alt='lineup'/>
+      <img className='lineup' src='assets/sunday.png' alt='lineup'/>
       <img className='lineup' src='assets/saturday.png' alt='lineup'/>
+      <img className='lineup' src='assets/friday.png' alt='lineup'/>
       <div className='content-outer'>
         <Watch />
       </div>
